@@ -6,6 +6,7 @@ import Lottie from 'lottie-react';
 import home from '../animation/home.json';
 import AboutPage from './About.page';
 import { ArrowRight } from 'react-feather';
+import Cta from './Product.page';
 // import { Height } from '@mui/icons-material';
 
 function HomePage() {
@@ -37,6 +38,7 @@ function HomePage() {
         </div>
       </section>
       <AboutPage />
+      <Cta />
     </MainLayout>
   );
 }
