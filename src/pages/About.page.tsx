@@ -7,7 +7,21 @@ import about from '../animation/about.json';
 function AboutPage() {
   return (
     <section className="container mx-auto w-auto h-fit">
-      <div className=" bg-white">
+      <div className="area">
+        <ul className="circles">
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
+      </div>
+      <div className="relative">
         <div className="container px-6 text-gray-600">
           <div className=" md:space-y-12 md:flex md:gap-6 lg:items-center lg:gap-32 ">
             <div className="w-1/2 flex items-center justify-center md:3/12 lg:w-4/12">

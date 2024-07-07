@@ -16,6 +16,20 @@ function HomePage() {
   return (
     <MainLayout>
       <section className="container mx-auto h-fit ">
+        <div className="area">
+          <ul className="circles">
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+          </ul>
+        </div>
         <div className="  lg:order-1 lg:flex items-center">
           <div className="hidden sm:flex w-[300px] h-[300px] bg-gradient-to-b from-[#cba6f8] to-[#e0967f] absolute rounded-full top-[1%] left-[10%]  sm:top-[10%] sm:left-[20%]  md:top-[10%] md:left-[1%]    lg:top-[1%] lg:left-[10%]  xl:top-[4%] xl:left-[5%] translate-x-[50%] translate-y-[50%] blur-[80px] hover:transform hover:scale-100 hover:bg-yellow-300 animate-pulse" />
           <div className=" px-12">
