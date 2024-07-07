@@ -3,7 +3,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/function-component-definition */
 import { useState } from 'react';
-import { Menu, X } from 'react-feather';
+import { Menu, Search, ShoppingCart, X } from 'react-feather';
 import { Link } from 'react-router-dom';
 
 interface HeaderItem {
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
     { title: 'About', link: '/' },
     { title: 'Review', link: '/' },
     { title: 'Gallary', link: '/' },
-    { title: 'Contact', link: '/' },
+    { title: 'Contact', link: '/contact' },
   ];
   // bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-400
   return (
@@ -36,15 +36,14 @@ const Header: React.FC = () => {
           />
         </h3>
       </div>
-      <div className="container mx-auto flex justify-between text-center items-center p-3 ">
+      <div className="container mx-auto w-full flex gap-64 justify-between items-center p-3 ">
         <img
           width={90}
           src="https://printo-s3.dietpixels.net/site/Printo-logo/printo-logo_1710143759.png?quality=70&format=webp&w=320"
           alt=""
           className=" animate-bounce"
         />
-        <h3>Brand</h3>
-        <div className="hidden lg:flex gap-4 text-md">
+        <div className="hidden lg:flex gap-7 text-md items-center">
           {header.map((item, index) => (
             <ul key={index} className="flex justify-center">
               <Link
@@ -56,29 +55,23 @@ const Header: React.FC = () => {
             </ul>
           ))}
         </div>
-        <div className="flex items-center  font-extrabold gap-5">
-          {/* <button
-            className="bg-gradient-to-t from-[#f5bbaa] shadow-inner shadow-[#f5bbaa] p-3 rounded-lg tracking-wide hover:scale-110 duration-300 "
-            type="button"
-          >
-            Login
-          </button>
-          <button
-            className="bg-gradient-to-t  from-[#f5bbaa] shadow-inner shadow-[#f5bbaa]   p-3 rounded-lg "
-            type="button"
-          >
-            Signup
-          </button> */}
+        <div className="flex flex-wrap justify-center items-center font-extrabold gap-4">
+          {/* <input type="text" placeholder="search" className="border" /> */}
+          <div className="flex gap-4">
+            <Search />
+            <ShoppingCart />
+          </div>
 
           <button
             type="button"
-            className="lg:hidden flex justify-end "
+            className="md:hidden flex justify-end "
             onClick={toggleMenu}
           >
             {menuOpen ? <X /> : <Menu className="" />}
           </button>
         </div>
       </div>
+
       {menuOpen && (
         <div className=" container mx-auto md:hidden bg-zinc-200 p-4">
           {header.map((item, index) => (

@@ -22,3 +22,42 @@
     content: '40% off on cards and gifts ';
   }
 }
+
+/* styles.css */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-inner {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.group-hover\:my-rotate-y-180:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+button {
+  transition: bottom 0.5s, transform 0.5s;
+}
+
+.group-hover\:bottom-10:hover button {
+  bottom: 10px;
+}
+
+.group-hover\:scale-100:hover button {
+  transform: scale(1);
+}

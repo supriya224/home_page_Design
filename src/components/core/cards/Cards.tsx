@@ -5,26 +5,42 @@ function Cards() {
     <section className="container mx-auto w-auto h-auto">
       <h3 className="text-4xl text-center py-12">Our products</h3>
       <div className="flex justify-center flex-wrap my-5 gap-12">
-        <select name="" id="" className="px-12 outline-none rounded-xl p-2">
+        <select
+          name=""
+          id=""
+          className="px-12 outline-none rounded-xl p-2 border"
+        >
           <option>Womens</option>
           <option>Tops</option>
           <option>Jackets</option>
           <option>jeans</option>
         </select>
-        <select name="" id="" className="px-12 outline-none rounded-xl p-2">
+        <select
+          name=""
+          id=""
+          className="px-12 outline-none rounded-xl p-2  border"
+        >
           <option>Electronics</option>
           <option>Mobile</option>
           <option>Laptop</option>
           <option>Freez</option>
           <option>Washing Machine</option>
         </select>
-        <select name="" id="" className="px-12 outline-none rounded-xl p-2">
+        <select
+          name=""
+          id=""
+          className="px-12 outline-none rounded-xl p-2  border"
+        >
           <option>Cards</option>
           <option>For Wedding</option>
           <option>For Birthday</option>
           <option>For party</option>
         </select>
-        <select name="" id="" className="px-12 outline-none rounded-xl p-2">
+        <select
+          name=""
+          id=""
+          className="px-12 outline-none rounded-xl p-2  border"
+        >
           <option>Winter</option>
           <option>Jackets</option>
           <option>sweaters</option>

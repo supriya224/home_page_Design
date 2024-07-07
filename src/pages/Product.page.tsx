@@ -1,3 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
+// import System from '../components/core/cards/Card';
+
 function Cta() {
   return (
     <div>
@@ -27,8 +31,10 @@ function Cta() {
               </button>
             </div>
           </div>
+          {/* <Lottie animationData={animate} />/ */}
         </div>
       </div>
+      {/* <System /> */}
     </div>
   );
 }

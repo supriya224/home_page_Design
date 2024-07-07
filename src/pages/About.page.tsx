@@ -1,56 +1,46 @@
-import React from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import Lottie from 'lottie-react';
+import { ArrowRight } from 'react-feather';
+import about from '../animation/about.json';
 
 function AboutPage() {
   return (
-    <section className="container mx-auto h-fit my-1  ">
-      <section className="flex justify-between mb-1  ">
-        <div className="mt-16">
-          <img
-            className="border rounded-lg p-12 "
-            src="https://cdn.prod.website-files.com/6364b6fd26e298b11fb9391f/6364b6fd26e298cf3bb93c3f_6309fc4305a883fc64b964cc_DrawKit0041_E-commerce_and_Online_Shopping_Banner.png"
-            alt=""
-            loading="lazy"
-          />
+    <section className="container mx-auto w-auto h-fit">
+      <div className=" bg-white">
+        <div className="container px-6 text-gray-600">
+          <div className=" md:space-y-12 md:flex md:gap-6 lg:items-center lg:gap-32 ">
+            <div className="w-1/2 flex items-center justify-center md:3/12 lg:w-4/12">
+              <Lottie animationData={about} width={300} height={100} />
+            </div>
+            <div className="md:7/12 lg:w-6/12">
+              <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+                About my company
+              </h2>
+              <p className="mt-6 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                omnis voluptatem accusantium nemo perspiciatis delectus atque
+                autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
+                consequatur! Officiis id consequatur atque doloremque!
+              </p>
+              <p className="mt-4 text-gray-600">
+                {' '}
+                Nobis minus voluptatibus pariatur dignissimos libero quaerat
+                iure expedita at? Asperiores nemo possimus nesciunt dicta veniam
+                aspernatur quam mollitia.
+              </p>
+              <button
+                type="button"
+                className="flex items-center my-12  text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
+              >
+                <span className="hover:italic flex gap-2 items-center hover:bg-orange-300 p-1 rounded-lg absolute duration-150">
+                  Shop Now <ArrowRight />
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="px-32 my-12">
-          <p className="pt-12 ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-            beatae cupiditate atque, minus blanditiis placeat repudiandae
-            obcaecati non quibusdam tempora numquam, harum dicta, dolores error
-            inventore earum tempore cumque quam?
-          </p>
-          <button
-            type="button"
-            className="bg-black text-white p-3 rounded-lg my-4 hover:bg-gray-800 translate-x-3"
-          >
-            View More
-          </button>
-        </div>
-      </section>
-      <section className=" flex justify-between mb-5 ">
-        <div className="pr-28 my-12">
-          <p className="pt-12 ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-            beatae cupiditate atque, minus blanditiis placeat repudiandae
-            obcaecati non quibusdam tempora numquam, harum dicta, dolores error
-            inventore earum tempore cumque quam?
-          </p>
-          <button
-            type="button"
-            className="bg-black text-white p-3 rounded-lg my-4"
-          >
-            View More
-          </button>
-        </div>
-        <div className="mt-16">
-          <img
-            className="border rounded-lg p-12 "
-            src="https://cdn.prod.website-files.com/6364b6fd26e298b11fb9391f/6364b6fd26e298cf3bb93c3f_6309fc4305a883fc64b964cc_DrawKit0041_E-commerce_and_Online_Shopping_Banner.png"
-            alt=""
-            loading="lazy"
-          />
-        </div>
-      </section>
+      </div>
     </section>
   );
 }
