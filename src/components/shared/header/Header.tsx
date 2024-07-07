@@ -10,11 +10,17 @@ interface HeaderItem {
   title: string;
   link: string;
 }
+
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
   };
 
   const header: HeaderItem[] = [
@@ -24,7 +30,7 @@ const Header: React.FC = () => {
     { title: 'Gallary', link: '/' },
     { title: 'Contact', link: '/contact' },
   ];
-  // bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-400
+
   return (
     <header className="border-b">
       <div className="bg-orange-400 p-1">
@@ -32,16 +38,16 @@ const Header: React.FC = () => {
           We have offer for you
           <span
             id="spin"
-            className="text-transparent font-normal bg-clip-text pl-2 bg-orange-900  "
+            className="text-transparent font-normal bg-clip-text pl-2 bg-orange-900"
           />
         </h3>
       </div>
-      <div className="container mx-auto w-full flex gap-6 justify-between items-center p-3 ">
+      <div className="container mx-auto w-full flex gap-6 justify-between items-center p-3">
         <img
           width={90}
           src="https://printo-s3.dietpixels.net/site/Printo-logo/printo-logo_1710143759.png?quality=70&format=webp&w=320"
           alt=""
-          className=" animate-bounce"
+          className="animate-bounce"
         />
         <div className="hidden lg:flex gap-7 text-md items-center">
           {header.map((item, index) => (
@@ -56,15 +62,17 @@ const Header: React.FC = () => {
           ))}
         </div>
         <div className="flex flex-wrap justify-center items-center font-extrabold gap-4">
-          {/* <input type="text" placeholder="search" className="border" /> */}
           <div className="flex gap-4">
-            <Search />
+            {searchOpen && (
+              <input type="text" placeholder="search" className="border p-1" />
+            )}
+            <Search onClick={toggleSearch} className="cursor-pointer" />
             <ShoppingCart />
           </div>
 
           <button
             type="button"
-            className="md:hidden flex justify-end "
+            className="md:hidden flex justify-end"
             onClick={toggleMenu}
           >
             {menuOpen ? <X /> : <Menu className="" />}
@@ -73,7 +81,7 @@ const Header: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className=" container mx-auto md:hidden bg-zinc-200 p-4">
+        <div className="container mx-auto md:hidden bg-zinc-200 p-4">
           {header.map((item, index) => (
             <ul key={index} className="flex flex-col">
               <li className="py-1">{item.title}</li>
