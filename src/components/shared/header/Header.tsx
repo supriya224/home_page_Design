@@ -64,7 +64,11 @@ const Header: React.FC = () => {
         <div className="flex flex-wrap justify-center items-center font-extrabold gap-4">
           <div className="flex gap-4">
             {searchOpen && (
-              <input type="text" placeholder="search" className="border p-1" />
+              <input
+                type="text"
+                placeholder="search"
+                className="border p-1.5 rounded-2xl text-sm font-light outline-none"
+              />
             )}
             <Search onClick={toggleSearch} className="cursor-pointer" />
             <ShoppingCart />

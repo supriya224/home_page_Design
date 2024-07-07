@@ -9,7 +9,7 @@ import contact from '../animation/contact.json';
 function ContactPage() {
   return (
     <div className="container mx-auto flex flex-col md:flex-row w-full gap-32 h-fit my-12  bg-white">
-      <div className="px-12 w-full ">
+      <div className="px-12 w-full lg:w-1/2 ">
         <h1 className="text-4xl font-medium">Contact us</h1>
         <p className="mt-3">Email us at help@domain.com or message us here:</p>
 
