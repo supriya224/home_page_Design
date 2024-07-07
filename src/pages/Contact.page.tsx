@@ -10,7 +10,7 @@ function ContactPage() {
   return (
     <div className="container mx-auto flex flex-col md:flex-row w-full gap-32 h-fit my-12  bg-white">
       <div className="px-12 w-full lg:w-1/2 ">
-        <h1 className="text-4xl font-medium">Contact us</h1>
+        <h3 className="text-4xl font-medium">Contact us</h3>
         <p className="mt-3">Email us at help@domain.com or message us here:</p>
 
         <form action="https://api.web3forms.com/submit" className="mt-10">

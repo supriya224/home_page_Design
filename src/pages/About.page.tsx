@@ -14,9 +14,9 @@ function AboutPage() {
               <Lottie animationData={about} width={300} height={100} />
             </div>
             <div className="md:7/12 lg:w-6/12">
-              <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+              <h3 className="text-2xl text-gray-900 font-bold md:text-4xl">
                 About my company
-              </h2>
+              </h3>
               <p className="mt-6 text-gray-600">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
                 omnis voluptatem accusantium nemo perspiciatis delectus atque
@@ -33,7 +33,7 @@ function AboutPage() {
                 type="button"
                 className="flex items-center my-12  text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
               >
-                <span className="hover:italic flex gap-2 items-center hover:bg-orange-300 p-1 px-3 rounded-3xl absolute duration-150">
+                <span className="hover:italic flex gap-2 items-center bg-orange-500 hover:bg-orange-500 p-1 px-3 rounded-3xl absolute duration-150">
                   Let's Go <ArrowRight />
                 </span>
               </button>

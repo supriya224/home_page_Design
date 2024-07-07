@@ -1,15 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
 import { Facebook, GitHub, Globe, Instagram } from 'react-feather';
-// import {
-//   Facebook,
-//   Globe,
-//   Instagram,
-//   Mail,
-//   PhoneCall,
-//   Twitter,
-// } from 'react-feather';
 
 function Footer() {
   return (
@@ -18,9 +9,9 @@ function Footer() {
         <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
           <div className="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              <h3 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
                 About
-              </h2>
+              </h3>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
                   <a className="text-gray-500 cursor-pointer hover:text-gray-900">
@@ -40,9 +31,9 @@ function Footer() {
               </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              <h3 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
                 Support
-              </h2>
+              </h3>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
                   <a className="text-gray-500 cursor-pointer hover:text-gray-900">
@@ -62,9 +53,9 @@ function Footer() {
               </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              <h3 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
                 Platform
-              </h2>
+              </h3>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
                   <a className="text-gray-500 cursor-pointer hover:text-gray-900">
@@ -84,9 +75,9 @@ function Footer() {
               </nav>
             </div>
             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
-              <h2 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
+              <h3 className="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">
                 Contact
-              </h2>
+              </h3>
               <nav className="mb-10 list-none">
                 <li className="mt-3">
                   <a className="text-gray-500 cursor-pointer hover:text-gray-900">

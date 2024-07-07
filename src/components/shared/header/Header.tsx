@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           We have offer for you
           <span
             id="spin"
-            className="text-transparent font-bold bg-clip-text pl-2  bg-gradient-to-r from-[#3c2655]  to-[#c8783f] "
+            className="text-transparent font-bold bg-clip-text pl-2 text-orange-700 "
           />
         </h3>
       </div>
@@ -70,8 +70,11 @@ const Header: React.FC = () => {
                 className="border p-1.5 rounded-2xl text-sm font-light outline-none"
               />
             )}
-            <Search onClick={toggleSearch} className="cursor-pointer" />
-            <ShoppingCart />
+            <Search
+              onClick={toggleSearch}
+              className="cursor-pointer hover:scale-125 duration-300"
+            />
+            <ShoppingCart className="hover:scale-125 duration-300" />
           </div>
 
           <button
@@ -79,7 +82,11 @@ const Header: React.FC = () => {
             className="md:hidden flex justify-end"
             onClick={toggleMenu}
           >
-            {menuOpen ? <X /> : <Menu className="" />}
+            {menuOpen ? (
+              <X className="hover:scale-125 duration-300" />
+            ) : (
+              <Menu className="hover:scale-125 duration-300" />
+            )}
           </button>
         </div>
       </div>

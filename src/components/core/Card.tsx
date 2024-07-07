@@ -81,9 +81,9 @@ function CardData() {
             />
             <div className=" bg-black flex items-center h-full ">
               <div className="px-3 max-w-xl">
-                <h2 className="text-2xl text-white font-semibold">
+                <h3 className="text-2xl text-white font-semibold">
                   Summer offer here
-                </h2>
+                </h3>
                 <p className="mt-2 text-xs text-white">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Tempore facere provident molestias ipsam sint voluptatum
@@ -93,7 +93,7 @@ function CardData() {
                   type="button"
                   className="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
                 >
-                  <span className="hover:italic flex gap-2 items-center hover:bg-red-400 p-1 rounded-lg absolute duration-150">
+                  <span className="hover:italic flex gap-2 items-center hover:bg-orange-500 p-1 rounded-lg absolute duration-150">
                     Shop Now <ArrowRight />
                   </span>
                 </button>
@@ -109,9 +109,9 @@ function CardData() {
             />
             <div className=" bg-black flex items-center h-full ">
               <div className="px-2 max-w-xl">
-                <h2 className="text-2xl text-white font-semibold">
+                <h3 className="text-2xl text-white font-semibold">
                   Winter Collection offer start now
-                </h2>
+                </h3>
                 <p className="mt-2 text-xs text-white">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Tempore facere provident molestias ipsam sint voluptatum
@@ -121,7 +121,7 @@ function CardData() {
                   type="button"
                   className="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
                 >
-                  <span className="hover:italic flex gap-2 items-center hover:bg-red-400 p-1 rounded-lg absolute duration-150">
+                  <span className="hover:italic flex gap-2 items-center hover:bg-orange-500 p-1 rounded-lg absolute duration-150">
                     Shop Now <ArrowRight />
                   </span>
                 </button>
@@ -139,9 +139,9 @@ function CardData() {
           />
           <div className=" bg-black flex items-center h-full ">
             <div className="px-10 max-w-xl">
-              <h2 className="text-2xl text-white font-semibold relative">
+              <h3 className="text-2xl text-white font-semibold relative">
                 Wedding sale here
-              </h2>
+              </h3>
               <p className="mt-2 text-xs text-white relative">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Tempore facere provident molestias ipsam sint voluptatum
@@ -149,9 +149,9 @@ function CardData() {
               </p>
               <button
                 type="button"
-                className="flex items-center relative mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
+                className="flex items-center  mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
               >
-                <span className="hover:italic flex gap-2 items-center hover:bg-red-400 p-1 rounded-lg absolute duration-150">
+                <span className="hover:italic flex gap-2 items-center hover:bg-orange-500 p-1 rounded-lg absolute duration-150">
                   Shop Now <ArrowRight />
                 </span>
               </button>
@@ -167,15 +167,15 @@ function CardData() {
           </h3>
           <p className="my-2 text-xl text-center ">Customize your products</p>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 my-9 h-full w-full">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 my-9 h-full w-full ">
           {/* Card Component */}
           {cardsData.map((card, index) =>
             card.img ? (
               <div
                 key={index}
-                className="card w-full h-64 rounded-xl cursor-pointer group perspective"
+                className="card w-full h-64 rounded-xl cursor-pointer group perspective "
               >
-                <div className="card-inner relative rounded-xl shadow-lg shadow-gray-300 preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+                <div className="card-inner relative rounded-xl shadow-lg shadow-gray-300 preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 ">
                   <div className="card-front absolute backface-hidden w-full h-full flex flex-col items-center justify-center">
                     <img
                       src={card.img}
@@ -183,13 +183,13 @@ function CardData() {
                       className="w-full h-full object-cover rounded-xl"
                     />
                   </div>
-                  <div className="card-back absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden">
+                  <div className="card-back absolute my-rotate-y-180 backface-hidden w-full h-full bg-orange-50 overflow-hidden">
                     <div className="text-center flex flex-col items-center justify-center h-full text-gray-800">
-                      <h4> {card.title}</h4>
+                      <h3 className="text-xl font-bold"> {card.title}</h3>
                       <p className="text-xs mx-2">{card.content}</p>
                       <button
                         type="button"
-                        className="bg-blue-500 p-2 px-4 font-semibold text-white rounded-full absolute bottom-10 delay-500 duration-800 scale-75 group-hover:scale-100"
+                        className="bg-orange-500 p-2 px-4 font-semibold text-white rounded-full absolute transition-all translate-y-3 bottom-10 delay-900 duration-400 scale-75 group-hover:scale-100"
                       >
                         View More
                       </button>

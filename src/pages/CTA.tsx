@@ -11,9 +11,9 @@ function Cta() {
         />
 
         <div className="w-fit h-fit my-9 mx-4 bg-gradient-to-b from-[#d9c5f0] to-[#ffc9b9] opacity-85 md:my-16 lg:py-16 py-10 lg:w-full  md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
-          <h1 className="text-4xl font-semibold leading-9 text-black text-center">
+          <h3 className="text-4xl font-semibold leading-9 text-black text-center">
             Don’t miss out!
-          </h1>
+          </h3>
           <p className="text-base leading-normal text-center text-black mt-6">
             Subscribe to your newsletter to stay in the loop. Our newsletter is
             sent once in <br />a week on every friday so subscribe to get latest
