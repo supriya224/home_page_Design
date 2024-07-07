@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   ];
   // bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-400
   return (
-    <header className="border-b ">
+    <header className="border-b">
       <div className="bg-orange-400 p-1">
         <h3 className="text-center text-white">
           We have offer for you
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           />
         </h3>
       </div>
-      <div className="container mx-auto w-full flex gap-64 justify-between items-center p-3 ">
+      <div className="container mx-auto w-full flex gap-6 justify-between items-center p-3 ">
         <img
           width={90}
           src="https://printo-s3.dietpixels.net/site/Printo-logo/printo-logo_1710143759.png?quality=70&format=webp&w=320"
