@@ -42,6 +42,7 @@ const Header: React.FC = () => {
           />
         </h3>
       </div>
+
       <div className="container mx-auto w-full flex gap-6 justify-between items-center p-3">
         <img
           width={60}
