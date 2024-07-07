@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+#spin {
+  position: relative;
+}
+
+#spin:after {
+  content: '';
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: '50% off on fashion ';
+  }
+  20% {
+    content: '25% off on winter ';
+  }
+  40% {
+    content: '50% off on kids ';
+  }
+  60% {
+    content: '40% off on cards and gifts ';
+  }
+  80% {
+    content: '';
+  }
+  100% {
+    content: '';
+  }
+}
+
 /*Start Animations*/
 @-webkit-keyframes animatetop {
   from {
@@ -174,37 +203,6 @@
   }
 }
 
-/* Spin Animation */
-#spin {
-  position: relative;
-}
-
-#spin:after {
-  content: '';
-  animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    content: '50% off on fashion ';
-  }
-  20% {
-    content: '25% off on winter ';
-  }
-  40% {
-    content: '50% off on kids ';
-  }
-  60% {
-    content: '40% off on cards and gifts ';
-  }
-  80% {
-    content: '';
-  }
-  100% {
-    content: '';
-  }
-}
-
 /* Background animation */
 .background-animation {
   position: fixed;
@@ -214,8 +212,7 @@
   overflow: hidden;
 }
 
-/* Additional styles for your site */
-body {
+Additional styles for your site body {
   position: relative;
   margin: 0;
   padding: 0;

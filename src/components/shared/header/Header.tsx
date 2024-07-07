@@ -34,12 +34,13 @@ const Header: React.FC = () => {
   return (
     <header className="border-b">
       <div className="bg-orange-400 p-1">
-        <h3 className="text-center text-white">
+        <h3 className="tfont-light text-center text-white tracking-wide">
           We have offer for you
           <span
             id="spin"
-            className="text-transparent font-bold bg-clip-text pl-2 text-orange-700 "
+            className="text-transparent font-extrabold bg-clip-text pl-2 bg-orange-800  "
           />
+          <br />
         </h3>
       </div>
 
