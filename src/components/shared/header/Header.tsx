@@ -38,13 +38,13 @@ const Header: React.FC = () => {
           We have offer for you
           <span
             id="spin"
-            className="text-transparent font-normal bg-clip-text pl-2 bg-orange-900"
+            className="text-transparent font-bold bg-clip-text pl-2  bg-gradient-to-r from-[#3c2655]  to-[#c8783f] "
           />
         </h3>
       </div>
       <div className="container mx-auto w-full flex gap-6 justify-between items-center p-3">
         <img
-          width={90}
+          width={60}
           src="https://printo-s3.dietpixels.net/site/Printo-logo/printo-logo_1710143759.png?quality=70&format=webp&w=320"
           alt=""
           className="animate-bounce"
@@ -61,8 +61,8 @@ const Header: React.FC = () => {
             </ul>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center items-center font-extrabold gap-4">
-          <div className="flex gap-4">
+        <div className="flex  justify-center items-center font-extrabold gap-2">
+          <div className="flex gap-2">
             {searchOpen && (
               <input
                 type="text"

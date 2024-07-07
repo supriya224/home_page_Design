@@ -1,4 +1,4 @@
- /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 const Myclass = plugin(function ({ addUtilities }) {
   addUtilities({
@@ -19,11 +19,12 @@ const Myclass = plugin(function ({ addUtilities }) {
 module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     variants: {
       extend: {
         translate: ['group-hover'],
-      }
+      },
     },
     extend: {
       fontFamily: {

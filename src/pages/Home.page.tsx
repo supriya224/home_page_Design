@@ -16,6 +16,7 @@ function HomePage() {
     <MainLayout>
       <section className="container mx-auto h-fit  ">
         <div className=" lg:flex items-center">
+          <div className=" w-[250px] h-[250px] bg-gradient-to-b from-[#cba6f8] to-[#e0967f] absolute rounded-full top-[3%] left-[-20%]  sm:top-[20%] sm:left-[40%]   lg:top-[15%] lg:left-[55%]  xl:top-[4%] xl:left-[5%] translate-x-[50%] translate-y-[50%] blur-[60px] hover:transform hover:scale-100 hover:bg-yellow-300 animate-pulse" />
           <div className=" px-12">
             <h3 className="text-4xl font-bold "> Welcome! to my Website</h3>
             <p className="text-sm">

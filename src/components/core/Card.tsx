@@ -70,9 +70,9 @@ function CardData() {
 
   return (
     <section className="container mx-auto w-auto h-fit  my-12">
-      <div className="my-3">
-        <div className="flex my-6 gap-1 mt-8 md:-mx-4">
-          <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2 relative">
+      <div className="my-3 px-3">
+        <div className="flex flex-col md:flex-row my-6 gap-1 mt-8 md:-mx-4">
+          <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2 relative  transform hover:scale-95 transition ease-in-out duration-500">
             <img
               src="https://img.freepik.com/premium-vector/big-summer-sale-banner-template-product-podium-with-summer-elements_560226-857.jpg"
               alt=""
@@ -80,11 +80,11 @@ function CardData() {
               loading="lazy"
             />
             <div className=" bg-black flex items-center h-full ">
-              <div className="px-10 max-w-xl">
+              <div className="px-3 max-w-xl">
                 <h2 className="text-2xl text-white font-semibold">
                   Summer offer here
                 </h2>
-                <p className="mt-2 text-white">
+                <p className="mt-2 text-xs text-white">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Tempore facere provident molestias ipsam sint voluptatum
                   pariatur.
@@ -100,7 +100,7 @@ function CardData() {
               </div>
             </div>
           </div>
-          <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2 relative">
+          <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2 relative   transform hover:scale-95 transition ease-in-out duration-500">
             <img
               src="https://png.pngtree.com/background/20210711/original/pngtree-december-hello-white-art-hand-painted-e-commerce-small-fresh-banner-picture-image_1067611.jpg"
               alt=""
@@ -108,11 +108,11 @@ function CardData() {
               loading="lazy"
             />
             <div className=" bg-black flex items-center h-full ">
-              <div className="px-10 max-w-xl">
+              <div className="px-2 max-w-xl">
                 <h2 className="text-2xl text-white font-semibold">
                   Winter Collection offer start now
                 </h2>
-                <p className="mt-2 text-white">
+                <p className="mt-2 text-xs text-white">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Tempore facere provident molestias ipsam sint voluptatum
                   pariatur.
@@ -130,7 +130,7 @@ function CardData() {
           </div>
         </div>
         {/* banner  */}
-        <div className="w-full h-96 bg-contain mt-8 rounded-md overflow-hidden bg-center md:mt-0  relative">
+        <div className="w-full h-96 shadow-xl shadow-gray-500  bg-contain mt-8 rounded-md overflow-hidden bg-center md:mt-0 relative transform hover:scale-95 transition ease-in-out duration-500">
           <img
             src="https://davidtutera.com/wp-content/uploads/2019/03/cielo-dress-banner-no-text-david-tutera-main-site.jpg"
             alt=""
@@ -142,7 +142,7 @@ function CardData() {
               <h2 className="text-2xl text-white font-semibold">
                 Wedding sale here
               </h2>
-              <p className="mt-2 text-white">
+              <p className="mt-2 text-xs text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Tempore facere provident molestias ipsam sint voluptatum
                 pariatur.
@@ -160,7 +160,7 @@ function CardData() {
         </div>
       </div>
       {/* next section */}
-      <div className="mt-12">
+      <div className="mt-12 px-3">
         <div className="px-5 ">
           <h3 className="text-xl text-center font-bold xl:text-2xl">
             Our cotegories and collections

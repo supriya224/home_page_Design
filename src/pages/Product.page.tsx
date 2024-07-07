@@ -4,37 +4,38 @@
 
 function Cta() {
   return (
-    <div>
-      <div className="flex items-center justify-center ">
-        <div className="w-full">
-          <div className="rounded-xl m-5 sm:m-16 shadow-inner shadow-[#2e2538] border-b bg-gradient-to-b from-[#ef957a]  bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-200 ">
-            <div className="flex flex-col p-10 py-12  px-5 sm:px-16 space-y-6  items-center text-center">
-              <h1 className="font-bold md:text-6xl text-3xl  tracking-wide ">
-                About us
-                {/* <span
-                  id="spin"
-                  className="text-transparent font-normal bg-clip-text pl-2 bg-gradient-to-r from-[#bc8ef1] via-[#f5bbaa] to-[#1d1129] "
-                /> */}
-                <br />
-              </h1>
-              <p className="text-gray-100 md:text-2xl text-xl px-18">
-                We are India's largest print-on-demand platform with a vision to
-                be the world's largest. We have over 15 years of experience in
-                the print industry, 28 retail stores across 6 cities, and have
-                serviced more than 1 Million customers online & offline.
-              </p>
-              <button
-                type="button"
-                className="rounded-lg px-3 w-fit py-2 shadow-lg shadow-[#000000] bg-black text-white sm:rounded-full  md:text-lg sm::py-4 sm:px-6 duration-150 hover:bg-white hover:text-black"
-              >
-                About More
-              </button>
-            </div>
+    <div className="2xl:mx-auto 2xl:container mx-4 py-16">
+      <div className="w-full relative flex items-center justify-center">
+        <img
+          src="https://i.ibb.co/4sYZ8gC/img-2.png"
+          alt="dining"
+          className="w-full h-full absolute z-0 hidden xl:block"
+          loading="lazy"
+        />
+
+        <div className="bg-orange-300 bg-opacity-50 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
+          <h1 className="text-4xl font-semibold leading-9 text-white text-center">
+            Don’t miss out!
+          </h1>
+          <p className="text-base leading-normal text-center text-white mt-6">
+            Subscribe to your newsletter to stay in the loop. Our newsletter is
+            sent once in <br />a week on every friday so subscribe to get latest
+            news and updates.
+          </p>
+          <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+            <input
+              className="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white"
+              placeholder="Email Address"
+            />
+            <button
+              type="button"
+              className="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75"
+            >
+              Subscribe
+            </button>
           </div>
-          {/* <Lottie animationData={animate} />/ */}
         </div>
       </div>
-      {/* <System /> */}
     </div>
   );
 }
