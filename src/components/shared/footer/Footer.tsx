@@ -115,7 +115,7 @@ function Footer() {
             />
             <p className="mt-2 text-sm text-gray-500">Design, Code and Ship!</p>
             <div className="mt-4">
-              <span className="inline-flex justify-center gap-5 mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+              <span className="inline-flex justify-center gap-5 mt-2 text-gray-900 sm:ml-auto sm:mt-0 sm:justify-start">
                 <Facebook className=" animate-pulse" />
                 <Instagram className=" animate-pulse" />
                 <Globe className=" animate-pulse" />

@@ -8,7 +8,7 @@ import welcome from './animation/welcome.json';
 
 const HomePage = lazy(() => import('./pages/Home.page'));
 const AboutPage = lazy(() => import('./pages/About.page'));
-const Cta = lazy(() => import('./pages/Product.page'));
+const Cta = lazy(() => import('./pages/CTA'));
 const ContactPage = lazy(() => import('./pages/Contact.page'));
 
 function App() {
@@ -23,48 +23,46 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <BrowserRouter>
-        {loading ? (
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100vh',
-            }}
+    <BrowserRouter>
+      {loading ? (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+          }}
+        >
+          <Lottie animationData={welcome} />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <Suspense
+            fallback={
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '100vh',
+                }}
+              >
+                <Lottie animationData={welcome} />
+              </div>
+            }
           >
-            <Lottie animationData={welcome} />
-          </div>
-        ) : (
-          <>
-            <Header />
-            <Suspense
-              fallback={
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: '100vh',
-                  }}
-                >
-                  <Lottie animationData={welcome} />
-                </div>
-              }
-            >
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/cta" element={<Cta />} />
-                <Route path="/contact" element={<ContactPage />} />
-              </Routes>
-            </Suspense>
-            <Footer />
-          </>
-        )}
-      </BrowserRouter>
-    </div>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/cta" element={<Cta />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </Suspense>
+          <Footer />
+        </>
+      )}
+    </BrowserRouter>
   );
 }
 

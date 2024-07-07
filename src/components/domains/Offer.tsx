@@ -5,10 +5,10 @@ import { Bookmark } from 'react-feather';
 
 function Offer() {
   return (
-    <div className="container mx-auto w-auto h-fit bg-red-600 sm:bg-blue-500 md:bg-teal-600 lg:bg-yellow-500 xl:bg-purple-400 my-7 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="container mx-auto w-auto h-fit my-7 px-3 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <div className="flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto">
         <div
-          className="overflow-hidden rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
+          className="overflow-hidden  rounded-xl relative transform hover:-translate-y-2 transition ease-in-out duration-500 shadow-lg hover:shadow-2xl movie-item text-white movie-card"
           data-movie-id="438631"
         >
           <div className="absolute inset-0 z-10 transition duration-300 ease-in-out bg-gradient-to-t from-black via-gray-900 to-transparent" />
@@ -19,7 +19,7 @@ function Offer() {
           >
             <div className="poster__info align-self-end w-full">
               <div className="h-32" />
-              <div className="space-y-6 detail_info">
+              <div className="space-y-6 detail_info pb-4">
                 <div className="flex flex-col space-y-2 inner">
                   <div className="flex gap-2 space-x-3">
                     <Bookmark />
@@ -61,7 +61,7 @@ function Offer() {
                     laudantium.
                   </p>
                 </div>
-                <div className=" flex w-fit bg-red-500 rounded-lg p-2 items-center justify-center  relative  space-x-4 z-10">
+                <div className=" flex w-fit bg-orange-500 rounded-lg p-2 items-center justify-center  relative  space-x-4 z-10">
                   <div className="text-sm text-white ml-2 justify-center items-center">
                     Set reminder
                   </div>
@@ -88,7 +88,7 @@ function Offer() {
           >
             <div className="poster__info align-self-end w-full">
               <div className="h-32" />
-              <div className="space-y-6 detail_info">
+              <div className="space-y-6 detail_info pb-4">
                 <div className="flex flex-col space-y-2 inner">
                   <div className="flex gap-2 space-x-3">
                     <Bookmark />
@@ -130,7 +130,7 @@ function Offer() {
                     laudantium.
                   </p>
                 </div>
-                <div className=" flex w-fit bg-red-500 rounded-lg p-2 items-center justify-center  relative  space-x-4 z-10">
+                <div className=" flex w-fit bg-orange-500 rounded-lg p-2 items-center justify-center  relative  space-x-4 z-10">
                   <div className="text-sm text-white ml-2 justify-center items-center">
                     Set reminder
                   </div>
@@ -157,7 +157,7 @@ function Offer() {
           >
             <div className="poster__info align-self-end w-full my-3">
               <div className="h-32" />
-              <div className="space-y-6 detail_info">
+              <div className="space-y-6 detail_info pb-4">
                 <div className="flex flex-col space-y-2 inner">
                   <div className="flex gap-2 space-x-3">
                     <Bookmark />
@@ -199,7 +199,7 @@ function Offer() {
                     laudantium.
                   </p>
                 </div>
-                <div className=" flex w-fit my-32 bg-red-500 rounded-lg p-2 items-center justify-center relative space-x-4 z-10">
+                <div className=" flex w-fit my-32 bg-orange-500 rounded-lg p-2 items-center justify-center relative space-x-4 z-10">
                   <div className="text-sm text-white ml-2 justify-center items-center">
                     Set reminder
                   </div>
