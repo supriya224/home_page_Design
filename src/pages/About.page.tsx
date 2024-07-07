@@ -33,7 +33,7 @@ function AboutPage() {
                 type="button"
                 className="flex items-center my-12  text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
               >
-                <span className="hover:italic flex gap-2 items-center bg-orange-500 hover:bg-orange-500 p-1 px-3 rounded-3xl absolute duration-150">
+                <span className="hover:italic flex gap-2 items-center text-white text-xs bg-orange-500 hover:bg-orange-500 p-2 px-3 rounded-3xl absolute duration-150">
                   Let's Go <ArrowRight />
                 </span>
               </button>

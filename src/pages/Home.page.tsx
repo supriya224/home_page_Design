@@ -9,6 +9,7 @@ import Cta from './CTA';
 import ContactPage from './Contact.page';
 import CardData from '../components/core/Card';
 import Offer from '../components/domains/Offer';
+import GallaryPage from './Gallary.page';
 
 function HomePage() {
   // bg-red-900 sm:bg-teal-600 md:bg-blue-600 lg:bg-yellow-500 xl:bg-pink-600
@@ -39,6 +40,7 @@ function HomePage() {
         <CardData />
         <AboutPage />
         <Offer />
+        <GallaryPage />
         <Cta />
         <ContactPage />
       </div>
