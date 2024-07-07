@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#spin {
+}
+#spin:after {
+  content: '';
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: '50% off on fashion ';
+  }
+  20% {
+    content: '25% off on winter ';
+  }
+  40% {
+    content: '50% off on kids ';
+  }
+  60% {
+    content: '40% off on cards and gifts ';
+  }
+}

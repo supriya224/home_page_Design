@@ -7,15 +7,11 @@ import home from '../animation/home.json';
 import AboutPage from './About.page';
 import { ArrowRight } from 'react-feather';
 import Cta from './Product.page';
+import Cards from '../components/core/cards/Cards';
 // import { Height } from '@mui/icons-material';
 
 function HomePage() {
-  // const style = {
-  //   width: '100%',
-  //   Height: '100%',
-  // };
   return (
-    //  bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-400
     <MainLayout>
       <section className="container mx-auto h-fit bg-gradient-to-b from-[#ef957a]  bg-red-300 sm:bg-pink-400 md:bg-blue-300 lg:bg-yellow-500 xl:bg-orange-200 ">
         <div className=" lg:flex items-center">
@@ -36,7 +32,9 @@ function HomePage() {
 
           <Lottie animationData={home} />
         </div>
+        <Cards />
       </section>
+
       <AboutPage />
       <Cta />
     </MainLayout>
