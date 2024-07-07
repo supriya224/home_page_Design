@@ -139,17 +139,17 @@ function CardData() {
           />
           <div className=" bg-black flex items-center h-full ">
             <div className="px-10 max-w-xl">
-              <h2 className="text-2xl text-white font-semibold">
+              <h2 className="text-2xl text-white font-semibold relative">
                 Wedding sale here
               </h2>
-              <p className="mt-2 text-xs text-white">
+              <p className="mt-2 text-xs text-white relative">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Tempore facere provident molestias ipsam sint voluptatum
                 pariatur.
               </p>
               <button
                 type="button"
-                className="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
+                className="flex items-center relative mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none hover:italic hover:bg-red-400"
               >
                 <span className="hover:italic flex gap-2 items-center hover:bg-red-400 p-1 rounded-lg absolute duration-150">
                   Shop Now <ArrowRight />
